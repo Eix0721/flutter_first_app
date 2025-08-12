@@ -1,82 +1,78 @@
-```markdown
-# Namer App
+# 第一个Flutter应用！（But design by AI)
 
-A tiny but delightful Flutter demo that generates random word-pairs on demand and lets you style the experience exactly the way you like.
+一个迷你却有趣的 Flutter 演示应用，能够按需生成随机单词组合，并让你随心所欲地切换主题风格。
 
-| ![Screenshot Light](https://via.placeholder.com/320x640/FAFAFA/000000?text=Light+Demo) | ![Screenshot Dark](https://via.placeholder.com/320x640/121212/FFFFFF?text=Dark+Demo) |
-|---|---|
+## ✨ 主要功能
 
-## ✨ Features
+- **随机单词组合**：借助 *english_words* 包实时生成。
+- **实时换色**：在应用内调色板中任意选择主题色。
+- **深浅模式**：一键切换明亮 / 暗黑外观。
+- **Material 3 设计**：卡片阴影、圆角与动态配色。
+- **按钮动画**：每次点击都有细腻的缩放反馈。
 
-- **Random word-pairs** powered by the *english_words* package.
-- **Live theming** – pick any accent color from the in-app palette.
-- **Light & dark mode** – toggle instantly with a switch.
-- **Material 3** styling with beautiful card elevations and rounded corners.
-- **Animated button** – subtle scale feedback for every interaction.
+## 🚀 快速开始
 
-## 🚀 Getting Started
-
-### 1. Clone the repo
+### 1. 克隆仓库
 ```bash
 git clone https://github.com/your-username/namer-app.git
 cd namer-app
 ```
 
-### 2. Install dependencies
+### 2. 安装依赖
 ```bash
 flutter pub get
 ```
 
-### 3. Run the app
+### 3. 运行应用
 ```bash
 flutter run
 ```
 
-## 🧪 Running Tests (optional)
+## 🧪 运行测试（可选）
 ```bash
 flutter test
 ```
 
-## 🛠️ Built With
+## 🛠️ 技术栈
 
-| Package | Purpose |
-|---------|---------|
-| [provider](https://pub.dev/packages/provider) | State management |
-| [english_words](https://pub.dev/packages/english_words) | Word-pair generation |
-| [google_fonts](https://pub.dev/packages/google_fonts) | Typography |
+| 依赖包 | 作用 |
+|--------|------|
+| [provider](https://pub.dev/packages/provider) | 状态管理 |
+| [english_words](https://pub.dev/packages/english_words) | 单词组合生成 |
+| [google_fonts](https://pub.dev/packages/google_fonts) | 字体定制 |
 
-## 📁 Project Structure
+## 📁 项目结构
 ```
 lib/
-├── main.dart          # Entry point & theming
+├── main.dart          # 入口与主题配置
 └── src/
-    ├── app_state.dart # MyAppState (ChangeNotifier)
-    ├── home_page.dart # MyHomePage widget
-    └── animated_button.dart # Custom animated button
+    ├── app_state.dart # MyAppState（状态管理）
+    ├── home_page.dart # 主页
+    └── animated_button.dart # 自定义带动画的按钮
 ```
-> *The snippets above are inlined in `main.dart` for simplicity in the original codelab.*
+> 为了简化示例，以上文件全部内联在 `main.dart` 中。
 
-## 🎨 Customization Tips
+## 🎨 个性化指南
 
-1. **Add more colors** – append entries to `colorOptions` in `MyAppState`.
-2. **Swap fonts** – replace `GoogleFonts.robotoTextTheme()` with any font from the [google_fonts catalog](https://fonts.google.com).
-3. **Tweak animations** – edit the `duration` and `scale` values inside `AnimatedButton`.
+1. **增加颜色**：在 `MyAppState` 的 `colorOptions` 里继续添加。
+2. **更换字体**：将 `GoogleFonts.robotoTextTheme()` 替换为 [Google_fonts 字体库](https://fonts.google.com) 中的任意字体。
+3. **调整动画**：修改 `AnimatedButton` 中的 `duration` 与缩放系数即可。
 
-## 🤝 Contributing
+## 🤝 如何贡献
 
-Contributions are welcome! Feel free to open issues or submit PRs.
+欢迎贡献！请随时提 Issue 或 Pull Request。
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-idea`)
-3. Commit your changes (`git commit -m 'Add amazing idea'`)
-4. Push to the branch (`git push origin feature/amazing-idea`)
-5. Open a Pull Request
+1. Fork 本仓库
+2. 创建功能分支（`git checkout -b feature/你的点子`）
+3. 提交更改（`git commit -m '添加了酷炫功能'`）
+4. 推送分支（`git push origin feature/你的点子`）
+5. 新建 Pull Request
 
-## 📄 License
+## 📄 许可证
 
-Distributed under the MIT License. See `LICENSE` for more information.
+MIT 许可证，详见 `LICENSE`。
 
 ---
 
-Made with ❤️ by [Your Name](https://github.com/your-username).
+用爱发电 ❤️ by [Eix0721](https://github.com/Eix0721)。
 ```
